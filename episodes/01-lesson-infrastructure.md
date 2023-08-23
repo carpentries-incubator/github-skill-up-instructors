@@ -26,5 +26,26 @@ Ideally, issues are not on the same pages so they don't cause conflicts, or we p
 3. While exploring the rendered website we discover a problem
 4. Look for an issue on the problem in the repo
 5. To fix the issue, we need to look something up in the workbench docs.  Instructor shows the Workbench file structure in the repo and the docs to look something up
-6. Exercise 1
+6. Exercise 1:  Look something up in the Workbench Docs
 -->
+
+
+::::::::::::::::::::::::::::::::::::: challenge 
+
+## Workbench Docs Challenge
+
+Use the [Workbench Documentation][workbench] to ...
+
+:::::::::::::::::::::::: solution 
+
+
+<!--- Where to find the solution to ... above -->
+<!--- Solution to ... above -->
+
+:::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::::::::::::
+
+
+
+[workbench]: https://carpentries.github.io/sandpaper-docs

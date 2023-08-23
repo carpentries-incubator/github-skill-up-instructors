@@ -26,5 +26,5 @@ exercises: 2
 8. Once PR is placed, we discover something that needs to be edited.
 9. Instructor edits branch with PR and shows that commit goes into the PR
 10. Briefly review structure for PRs and merge to see change in rendered webpage
-11. Exercise 2
+11. Exercise 2: Claim one of the issues in the test repo and fix it with a PR
 --> 
