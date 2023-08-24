@@ -19,10 +19,10 @@ It does not require participants know how to use git or GitHub prior to the skil
 
 After this skill-up learners will be able to…
 
-1. Edit a file in GitHub and commit it
 2. Navigate the Carpentries Workbench structure
-3. Create a Pull Request
 4. Look up info in the [Workbench docs][workbench]
+1. Edit a file in GitHub and commit it
+3. Create a Pull Request
 5. Edit a Pull Request
 6. Navigate the PR review structure
 
