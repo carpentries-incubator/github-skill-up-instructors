@@ -19,9 +19,9 @@ exercises: 20
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 <!--- Outline 
-1.Instructor creates test repo with X issues and shares with learners
-X = the number of learners +2
-Ideally, issues are not on the same pages so they don't cause conflicts, or we plan to teach conflicts (which could be a good way to have learners practice editing PRs)
+1. [Setup ahead] Instructor creates test repo with X issues and shares with learners
+	- X = the number of learners +2
+	- Ideally, issues are not on the same pages so they don't cause conflicts, or we plan to teach conflicts (which could be a good way to have learners practice editing PRs)
 2. Instructor shows the repo vs the rendered website
 3. While exploring the rendered website we discover a problem
 4. Look for an issue on the problem in the repo
