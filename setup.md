@@ -2,7 +2,10 @@
 title: Setup
 ---
 
-Prior to the skill-up, you need to
+## Setup
+
+Prior to the skill-up, you need to..
+
 - Have a web browser installed.  This can be whatever web browser you typically use:
 Mozilla Firefox, Chrome, Edge, Safari, or others.
 This skill-up should work the same on any browser.  If it doesn't please, we would really appreciate you [filing an issue][issue] to let us know.
