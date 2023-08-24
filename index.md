@@ -18,6 +18,7 @@ It does not require participants know how to use git or GitHub prior to the skil
 ## Learning Objectives
 
 After this skill-up learners will be able to…
+
 1. Edit a file in GitHub and commit it
 2. Navigate the Carpentries Workbench structure
 3. Create a Pull Request
