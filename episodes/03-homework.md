@@ -16,7 +16,13 @@ exercises: 2
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-<!--- outline 
-Optional Homework: Make your own copy of the text repo and practice.
-Alt optional Homework: Practice making a contribution on one  of the help wanted issues (can tag Sarah to review if you'd like)
--->
+
+## Optional: Homework
+
+You can also practice your GitHub skills using the Carpentries lessons!
+There is a [Help Wanted page](https://carpentries.org/help-wanted-issues/) that lists issues 
+that are looking for someone to implement a fix.  I recommend looking for issues with the label 
+"good first issue" as these are identified as issues that may be easier to solve.
+
+Remember for follow-up questions or help, you can join the #first-time-contributors channel on slack or email [team@carpentries.org](mailto:team@carpentries.org).
+
