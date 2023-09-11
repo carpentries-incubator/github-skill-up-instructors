@@ -59,7 +59,9 @@ contact: 'team@carpentries.org' # FIXME
 
 # Order of episodes in your lesson
 episodes: 
-- introduction.md
+- 01-lesson-infrastructure.md
+- 02-suggest-change.md
+- 03-homework.md
 
 # Information for Learners
 learners: 

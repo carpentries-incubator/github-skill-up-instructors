@@ -179,7 +179,31 @@
 <div class="accordion accordion-flush" id="accordionFlush2">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading2">
-        <a href="introduction.html">1. Using Markdown</a>
+        <a href="01-lesson-infrastructure.html">1. Getting Started with the Carpentries Lesson Infrastructure</a>
+    </div>
+<!--/div.accordion-header-->
+        
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush3">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading3">
+        <a href="02-suggest-change.html">2. Using Markdown</a>
+    </div>
+<!--/div.accordion-header-->
+        
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush4">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading4">
+        <a href="03-homework.html">3. Using Markdown</a>
     </div>
 <!--/div.accordion-header-->
         
@@ -242,11 +266,158 @@
     <main id="main-content" class="main-content"><div class="container lesson-content">
         
         
-<section id="aio-introduction"><p>Content from <a href="introduction.html">Using Markdown</a></p>
+<section id="aio-01-lesson-infrastructure"><p>Content from <a href="01-lesson-infrastructure.html">Getting Started with the Carpentries Lesson Infrastructure</a></p>
 <hr>
-<p> Last updated on 2023-07-24 | 
+<p> Last updated on 2023-09-11 | 
         
-        <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/introduction.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+        <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/01-lesson-infrastructure.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 50 minutes </p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right"> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<div class="overview card">
+<h2 class="card-header">Overview</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Questions</h3>
+<ul>
+<li>How are files/folders in the Carpentries Workbench organized?</li>
+<li>How do I find information on the Carpentries Workbench?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Objectives</h3>
+<ul>
+<li>Navigate the Carpentries Workbench Structure</li>
+<li>Look up info in the Workbench docs</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>In this lesson we will be using an example repository, created
+specifically for this lesson. You will be able to play with it and not
+be concerned about breaking anything in a real lesson. The instructor
+for today’s session should share links to the rendered website and the
+backend repo in chat.</p>
+<p>In the first hour we will:</p>
+<ul>
+<li>Explore how lesson pages look and the repositories that make them
+look that way</li>
+<li>See a demo of what to do when you find a problem with the lesson,
+both how to report the problem and how to fix it</li>
+</ul>
+<p>In the second hour each person here will get the chance to practice
+fixing an issue in our practice lesson.</p>
+<div id="accordionInstructor1" class="accordion instructor-note accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
+  <h3 class="accordion-header" id="headingInstructor1">
+  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>
+  Instructor Note
+  </h3>
+</button>
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div class="accordion-body">
+<p>You will need to prepare the repo in advance. This can be setup
+automatically using GitHub command line tools. Be sure you turned on the
+gh-pages rendering and linked the rendered page in the about section.
+Share the rendered webpage and the repo in chat.</p>
+<p>Website: <insert your link here> Repo: <insert your link here></insert></insert></p>
+</div>
+</div>
+</div>
+</div>
+<section id="exploring-the-website-vs.-the-repo"><h2 class="section-heading">Exploring the Website vs. the Repo<a class="anchor" aria-label="anchor" href="#exploring-the-website-vs.-the-repo"></a>
+</h2>
+<hr class="half-width">
+<p>The rendered repository may look familiar as all the Carpentries
+official lessons have webpages use the same infrastructure, the
+Workbench. All the lessons are hosted in GitHub, a popular service for
+sharing repositories, folders with a history using the unix shell
+software git. This lesson will focus on working on lesson contributions
+in the GitHub interface, if you’d like to learn to use git in the unix
+shell, please see the <a href="https://swcarpentry.github.io/git-novice/" class="external-link">Software Carpentry -
+Version Control with Git Lesson</a>. The webpage we are looking at now
+is hosted via a repository on GitHub. Let’s take a look at it. You can
+find it either using the repo link in chat or by scrolling to the bottom
+of any page of the rendered website and clicking the “Source
+Button”.</p>
+<p>This repository contains the files that tell it what to put on the
+rendered webpage.</p>
+<p>Things the instructor should show here (also show the rendered
+pages):</p>
+<ul>
+<li>
+<code>episodes</code> folder</li>
+<li>
+<code>learners</code> folder and <code>setup.md</code> page</li>
+<li>
+<code>instructors</code> folder</li>
+</ul></section><section id="workbench-documentation"><h2 class="section-heading">Workbench documentation<a class="anchor" aria-label="anchor" href="#workbench-documentation"></a>
+</h2>
+<hr class="half-width">
+<p>You will become more familiar with the repository part of lessons the
+more you work with them. Until then you can use the <a href="https://carpentries.github.io/sandpaper-docs" class="external-link">Workbench
+Documentation</a> and support from the Carpentries Community. There is a
+lot of useful info in the documentation, so it is worth looking over
+more generally. I most commonly use the <a href="https://carpentries.github.io/sandpaper-docs/episodes.html" class="external-link">Episode
+Structure episode</a> as it has a lot of info about how to format
+different elements that go in an episode.</p>
+<div id="workbench-docs---callout-blocks" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="workbench-docs---callout-blocks" class="callout-inner">
+<h3 class="callout-title">Workbench Docs - Callout Blocks<a class="anchor" aria-label="anchor" href="#workbench-docs---callout-blocks"></a>
+</h3>
+<div class="callout-content">
+<p>A callout block, is a special box type that can go in Carpentries
+lessons. They often include info that is optional for the instructor to
+say to help cut down on the main text. Use the <a href="https://carpentries.github.io/sandpaper-docs" class="external-link">Workbench
+Documentation</a> to find how you can add a callout block to a lesson.
+Paste in chate the example callout from the documentation.</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1">
+  Show me the solution
+  </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div class="accordion-body">
+<p>We can find how to add alt text in the <a href="https://carpentries.github.io/sandpaper-docs/episodes.html#callout-blocks" class="external-link">Callout
+blocks of the Episodes Structure episode</a>.</p>
+<div class="codewrapper sourceCode" id="cb1">
+<h3 class="code-label">MARKDOWN<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>::: callout</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>This is a callout block. It contains at least three colons</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>:::</span></code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use. 
+ -->
+</section></section><section id="aio-02-suggest-change"><p>Content from <a href="02-suggest-change.html">Using Markdown</a></p>
+<hr>
+<p> Last updated on 2023-09-11 | 
+        
+        <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/02-suggest-change.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 12 minutes </p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right"> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
@@ -259,8 +430,9 @@
 <div class="inner">
 <h3 class="card-title">Questions</h3>
 <ul>
-<li>How do you write a lesson using Markdown and
-<a href="https://carpentries.github.io/sandpaper/" class="external-link">sandpaper</a>?</li>
+<li>How do I edit a file in a Carpentries lesson?</li>
+<li>How do I suggest those changes back to the Carpentries?</li>
+<li>How do I edit the suggested changes after I’ve submitted them?</li>
 </ul>
 </div>
 </div>
@@ -270,37 +442,167 @@
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
 <ul>
-<li>Explain how to use markdown with The Carpentries Workbench</li>
-<li>Demonstrate how to include pieces of code, figures, and nested
-challenge blocks</li>
+<li>Edit a file in GitHub and commit</li>
+<li>Create a Pull Request</li>
+<li>Edit a Pull Request</li>
+<li>Navigate the PR review structure</li>
 </ul>
 </div>
 </div>
 </div>
 </div>
 </div>
-<section id="introduction"><h2 class="section-heading">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a>
+<p>This episode will dig further into suggesting changes using the
+lesson infrasturucture.</p>
+<p>Imagine we are looking at rendered “instructor view” to prepare to
+teach, we notice we can review all images that are part of the lesson to
+see how we want to reuse them. We then notice that the the 2nd image
+cinnamon rolls doesn’t have any alternative text. Alternative text or
+alt text, is often used by individuals with vision disabilities to
+relate the contents of an image.</p>
+<p>Let’s suggest an update to the lesson so this image has alt text.
+First, we will file an issue to alter maintainers to the problem.</p>
+<section id="filing-an-issue"><h2 class="section-heading">Filing an Issue<a class="anchor" aria-label="anchor" href="#filing-an-issue"></a>
 </h2>
 <hr class="half-width">
-<p>This is a lesson created via The Carpentries Workbench. It is written
-in <a href="https://pandoc.org/MANUAL.txt" class="external-link">Pandoc-flavored Markdown</a>
-for static files and <a href="https://rmarkdown.rstudio.com/" class="external-link">R
-Markdown</a> for dynamic files that can render code into output. Please
-refer to the <a href="https://carpentries.github.io/sandpaper-docs/" class="external-link">Introduction to The
-Carpentries Workbench</a> for full documentation.</p>
-<p>What you need to know is that there are three sections required for a
-valid Carpentries lesson:</p>
-<ol style="list-style-type: decimal">
-<li>
-<code>questions</code> are displayed at the beginning of the episode
-to prime the learner for the content.</li>
-<li>
-<code>objectives</code> are the learning objectives for an episode
-displayed with the questions.</li>
-<li>
-<code>keypoints</code> are displayed at the end of the episode to
-reinforce the objectives.</li>
-</ol>
+<p>We will first go to the source repository again and open the “Issues”
+tab. We can make a new issue by clicking the “New Issue” button in the
+upper right side of the window. However, best practice is that we search
+through existing issues to see if anyone has already reported this one.
+I’ll search for “alt text” in open issues (the default search options on
+this page). I can see that issue #4 is about alt text, I’ll open it to
+see if it is the same as what I was planning to describe. It is, in
+fact, the same issue!</p>
+<p>Instead of reporting it, I could then add more info to the existing
+issue if I think it is needed. This would be enough to help the
+maintainers get started. However, if I want to suggest the change
+directly, I can do what is called a “Pull Request”. A “Pull Request” is
+where someone makes a copy of the lesson, make changes, and then
+suggests the official repo “pull” the updated version if they are happy
+with those changes. Making a “pull request”, often called a “PR”, is a
+great way to support lesson maintenance and to help get changes
+integrated faster.</p>
+</section><section id="creating-a-pull-request"><h2 class="section-heading">Creating a Pull Request<a class="anchor" aria-label="anchor" href="#creating-a-pull-request"></a>
+</h2>
+<hr class="half-width">
+<p>First, before I start to make the changes, I’ll let others know I’m
+going to work on this issue. If you are affiliated with the repository,
+you might be able to click the “assign yourself” button under the
+Assignee’s section on the right side. However, most of us will not have
+access to the Carpentries Lessons directly. Instead, we will type a note
+in as a comment, “I’ll go ahead and make a PR with this change”.</p>
+<p>Next, we need to find the file we want to make changes to. This
+change needs to be made in the recipe instructions page, we can get a
+hint at the file name by looking at the URL of the rendered webpage. It
+says it is <code>recipe_instructions.html</code>, which is a hint that
+the file name will include <code>recipe_instructions</code>. This is an
+“episode”, a section of a lesson, so we can find it in the
+<code>episodes</code> folder. The file is in Markdown format, a simpler
+text language, and then the Workbench infrastructure renders it as an
+html, so the file itself is called
+<code>recipe_instructions.md</code></p>
+<p>Before we can make the change in our lesson, we need to know the
+proper syntax in the Workbench markdown to add alt text to the
+image.</p>
+<div id="workbench-docs---alt-text" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="workbench-docs---alt-text" class="callout-inner">
+<h3 class="callout-title">Workbench Docs - Alt text<a class="anchor" aria-label="anchor" href="#workbench-docs---alt-text"></a>
+</h3>
+<div class="callout-content">
+<p>Use the <a href="https://carpentries.github.io/sandpaper-docs" class="external-link">Workbench
+Documentation</a> to find how to add alternative text to an image. Type
+what we need to add to the image in chat when you’ve found it.</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1">
+  Show me the solution
+  </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div class="accordion-body">
+<p>We can find how to add alt text in the <a href="https://carpentries.github.io/sandpaper-docs/episodes.html#figures" class="external-link">Figures
+section of the Episodes Structure episode</a>. It says we need to
+include it with curly brackets and <code>alt=</code> after the image
+link. E.g. <code>![caption](image){alt='alt text'}</code></p>
+</div>
+</div>
+</div>
+</div>
+<p>Now that we know how to add the alt text, I can go make the change in
+a copy of the lesson. I’ll go ahead and copy the text the issue
+recommends. Then I’ll go back to the “Code” tab where all the files for
+the repo are and navigate to
+<code>episodes/recipe_instructions.md</code></p>
+<p>Here is where we want to make the change. We need to tell GitHub we
+want to make edits by clicking the pencil icon in the upper right. If
+you don’t have permissions, it will ask if you want to make a fork.
+<!--- I think but I can't test it as I have write permissions --> A fork
+is your copy of a repository that you have access to and can edit.</p>
+<p>In my fork I’ll make the change adding
+<code>{alt='A bunch of cinnamon rolls in a baking tray in an oven.'}</code>
+after the image link. I then want to save my changes, to do so in GitHub
+I have to create a “commit”, which is a save with a short message about
+what changed. I can click the “Commit Changes” button on the upper right
+side or type Ctrl/Cmd+s, the save keyboard shortcut in most programs.
+This will pop up a box to save, the “Commit message” box auto-populates
+with a message “Update recipe_instructions.Rmd”. That message isn’t very
+descriptive so it won’t make for a good message in the history. I’ll
+instead change it to “Added alt text to image of rolls in oven”. If you
+need to leave some additional info or a longer message, you can add it
+to the “Extended description” box.</p>
+<p>If you have write access, the most important thing we want to check
+is that the radio buttons at the bottom is switched to the option to
+“Create a <strong>new branch</strong> for this commit and start a pull
+request”. If we leave the default box to “Commit directly to the
+<code>main</code> branch” it won’t start us on the process of suggesting
+this change back to the official Carpentries repository. When we click
+the <strong>new branch</strong> button, it asks us what we want to call
+the “branch”, this is a copy of the repository within our fork. We can
+only have one fork but we can have as many branches as we want. The
+ability to create many different branches allows us to suggest lots of
+different changes separately to a lesson. I’m going to name my branch
+with the issue it fixes, #4. Then I’ll click the “Propose changes”
+button in the bottom right. When you practice this, it probably won’t
+give you the radio buttons but will automatically make a new branch
+called <code>patch-1</code> for you in your fork.</p>
+<p>We’ve now <em>saved</em> our suggested changes in our fork and the
+next page it pulls up for us is to file the “Pull Request” suggesting
+that the official repo “pull” in our changes. We can see the comparison
+between forks and branches at the top of the page and a display of the
+differences between our version and the official version. Since we are
+finished with our suggested changes we will click the “Create pull
+request” button in the upper right.</p>
+<p>It autofills the title with our commit message but we can edit it or
+add more info in the “Leave a comment box”. The title is probably okay
+but one thing we might want to do is <em>link</em> our PR with the issue
+it solves. We can type “#4” and it will link it to the #4 issue, and it
+nicely shows us the title of that issues so we can confirm. Since we
+know this PR should solve this issue we can add a keyword that will
+automatically close the linked issue when our changes are accepted by
+adding “Fixes” in front of the #4. Be sure the option to “Allow edits by
+maintainers” is checked, this will make it easier fo the maintainers to
+help you with any fixes your PR needs. Then we will click the “Create
+pull request” button.</p>
+<p>Let’s take a look at the PR we just submitted. It has…</p>
+<ul>
+<li>A tab for discussion</li>
+<li>A tab listing all the commits/saves in our PR</li>
+<li>A tab for checks, which is more for the automated workflows so we
+will ignore</li>
+<li>A tab that shows the changes, called a “diff” between the official
+repo and our forked branch</li>
+</ul>
+<p>Next, we wait for someone to review our Pull Request.</p>
+</section><section id="reviewing-a-pr"><h2 class="section-heading">Reviewing a PR<a class="anchor" aria-label="anchor" href="#reviewing-a-pr"></a>
+</h2>
+<hr class="half-width">
 <div id="accordionInstructor1" class="accordion instructor-note accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
@@ -309,130 +611,186 @@ reinforce the objectives.</li>
   Instructor Note
   </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
 <div class="accordion-body">
-<p>Inline instructor notes can help inform instructors of timing
-challenges associated with the lessons. They appear in the “Instructor
-View”</p>
+<p>Here you should swap to a collaborator screensharing, if possible, so
+they can review your PR. Otherwise, you can probably just pretend you
+are someone different.</p>
 </div>
 </div>
 </div>
 </div>
-<div id="challenge-1-can-you-do-it" class="callout challenge">
-<div class="callout-square">
-<i class="callout-icon" data-feather="zap"></i>
-</div>
-<div id="challenge-1-can-you-do-it" class="callout-inner">
-<h3 class="callout-title">Challenge 1: Can you do it?<a class="anchor" aria-label="anchor" href="#challenge-1-can-you-do-it"></a>
-</h3>
-<div class="callout-content">
-<p>What is the output of this command?</p>
-<div class="codewrapper sourceCode" id="cb1">
-<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">paste</span><span class="op">(</span><span class="st">"This"</span>, <span class="st">"new"</span>, <span class="st">"lesson"</span>, <span class="st">"looks"</span>, <span class="st">"good"</span><span class="op">)</span></span></code></pre>
-</div>
-</div>
-</div>
-</div>
-<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
-  <h4 class="accordion-header" id="headingSolution1">
-  Output
-  </h4>
-</button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
-<div class="accordion-body">
-<div class="codewrapper">
-<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="output" tabindex="0"><code>[1] "This new lesson looks good"</code></pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="challenge-2-how-do-you-nest-solutions-within-challenge-blocks" class="callout challenge">
-<div class="callout-square">
-<i class="callout-icon" data-feather="zap"></i>
-</div>
-<div id="challenge-2-how-do-you-nest-solutions-within-challenge-blocks" class="callout-inner">
-<h3 class="callout-title">Challenge 2: how do you nest solutions within
-challenge blocks?<a class="anchor" aria-label="anchor" href="#challenge-2-how-do-you-nest-solutions-within-challenge-blocks"></a>
-</h3>
-<div class="callout-content">
-
-</div>
-</div>
-</div>
-<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
-  <h4 class="accordion-header" id="headingSolution2">
-  Show me the solution
-  </h4>
-</button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
-<div class="accordion-body">
-<p>You can add a line with at least three colons and a
-<code>solution</code> tag.</p>
-</div>
-</div>
-</div>
-</div>
-</section><section id="figures"><h2 class="section-heading">Figures<a class="anchor" aria-label="anchor" href="#figures"></a>
-</h2>
-<hr class="half-width">
-<p>You can use standard markdown for static figures with the following
-syntax:</p>
-<p><code>![optional caption that appears below the figure](figure url){alt='alt text for accessibility purposes'}</code></p>
-<figure><img src="https://raw.githubusercontent.com/carpentries/logo/master/Badge_Carpentries.svg" alt="Blue Carpentries hex person logo with no text." class="figure mx-auto d-block"><figcaption>You belong in The Carpentries!</figcaption></figure><div id="callout1" class="callout callout">
-<div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
-</div>
-<div class="callout-inner">
-<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#callout1"></a>
-</h3>
-<div class="callout-content">
-<p>Callout sections can highlight information.</p>
-<p>They are sometimes used to emphasise particularly important points
-but are also used in some lessons to present “asides”: content that is
-not central to the narrative of the lesson, e.g. by providing the answer
-to a commonly-asked question.</p>
-</div>
-</div>
-</div>
-</section><section id="math"><h2 class="section-heading">Math<a class="anchor" aria-label="anchor" href="#math"></a>
-</h2>
-<hr class="half-width">
-<p>One of our episodes contains <span class="math inline">\(\LaTeX\)</span> equations when describing how to
-create dynamic reports with {knitr}, so we now use mathjax to describe
-this:</p>
-<p><code>$\alpha = \dfrac{1}{(1 - \beta)^2}$</code> becomes: <span class="math inline">\(\alpha = \dfrac{1}{(1 - \beta)^2}\)</span></p>
-<p>Cool, right?</p>
-<div id="keypoints1" class="callout keypoints">
-<div class="callout-square">
-<i class="callout-icon" data-feather="key"></i>
-</div>
-<div class="callout-inner">
-<h3 class="callout-title">Keypoints<a class="anchor" aria-label="anchor" href="#keypoints1"></a>
-</h3>
-<div class="callout-content">
+<p>Now, a reviewer comes in and takes a look at my PR. They will most
+likely look at the files changed closely.</p>
+<p>The reviewer notices that we should mention that these are the
+uncooked cinnamon rolls in the image. They could comment in the
+discussion tab with that suggestion for me to fix.</p>
 <ul>
-<li>Use <code>.md</code> files for episodes when you want static
-content</li>
-<li>Use <code>.Rmd</code> files for episodes when you need to generate
-output</li>
-<li>Run <code>sandpaper::check_lesson()</code> to identify any issues
-with your lesson</li>
-<li>Run <code>sandpaper::build_lesson()</code> to preview your lesson
-locally</li>
+<li>Reviewer types “I suggest you update the alt text to mention the
+rolls are uncooked in this image.”</li>
+</ul>
+<p>Alternatively, they could “suggest” the change directly. In the
+“Files changed” tab, they can click on the “+” sign to the right of the
+line numbers on the line or lines where they want to make a suggestion.
+This pops up the option to make a comment associated specifically with
+that line. The reviewer could also have put their comment from the
+suggestion in this comment box, then if lots of lines were changed it
+would be easier for me to find. To make the change even more directly
+they can click the icon that has box and a + and a - sign. This button
+adds in a suggestion block into the comment. They can then go and make
+the change in this block directly.</p>
+<ul>
+<li>Reviewer updates the line to say ‘A bunch of
+<strong>uncooked</strong> cinnamon rolls in a baking tray in an
+oven.’</li>
+</ul>
+<p>The review could put together a bunch of a comments into a review by
+clicking “Start a review” but since our PR is relatively simple, they
+will instead click “Add single comment” to submit this issue.</p>
+<!--- TODO: callout to mention that they might have to do a review if that is required for merging because the main branch is protected -->
+<div id="accordionInstructor2" class="accordion instructor-note accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor2" aria-expanded="false" aria-controls="collapseInstructor2">
+  <h3 class="accordion-header" id="headingInstructor2">
+  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>
+  Instructor Note
+  </h3>
+</button>
+<div id="collapseInstructor2" class="accordion-collapse collapse" aria-labelledby="headingInstructor2" data-bs-parent="#accordionInstructor2">
+<div class="accordion-body">
+<p>Here you should swap back to the original presenter
+screensharing.</p>
+</div>
+</div>
+</div>
+</div>
+<p>Now I can see the single comment that the review added and even
+better I can click the “commit suggestion” button to directly accept
+their change into my PR. I’ll also update the commit message to say
+“Adds more detail to alt text” and then click “commit changes”.</p>
+<p>Now that suggestion by the reviewer is accepted and the comment is
+closed as it is outdated, though someone could expand it if they wanted
+to see what had been done. You may now note that the Commits tab has 2
+commits. If we were to check the “Files changed” it would also be
+updated.</p>
+<p>You too can put in suggestions and then accept them if you need to
+make small changes to your PR based on a reviewer’s advice. This works
+best for small changes and there is a different way I would suggest
+using for bigger changes but we won’t cover it today.</p>
+</section><section id="maintainer-accepts-pull-request"><h2 class="section-heading">Maintainer Accepts Pull Request<a class="anchor" aria-label="anchor" href="#maintainer-accepts-pull-request"></a>
+</h2>
+<hr class="half-width">
+<p>Once the review has been completed, the maintainer (or anyone with
+more access to the repository) can accept our changes and merge the pull
+request in. They do this by clicking the “Merge pull request button”.
+You won’t see this button if you don’t have access to the repo but I do
+so I will go ahead and merge it so we can see what happens.</p>
+<p>We can see the status of the Pull request changed to “Merged”, it is
+also no longer listed in the Pull Requests tab at the top of the
+page.</p>
+<p><em>What happened with the linked issue?</em> If we click on the #4
+link in the PR it will take us to the issue and we can see that the
+issue is now “Closed”. This automatically happened when we merged the PR
+since we wrote that the PR “fixes #4”.</p>
+<div id="make-a-pr-yourself" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<div id="make-a-pr-yourself" class="callout-inner">
+<h3 class="callout-title">Make a PR yourself<a class="anchor" aria-label="anchor" href="#make-a-pr-yourself"></a>
+</h3>
+<div class="callout-content">
+<p>Now you can practice making a Pull Request yourself.</p>
+<ul>
+<li>Go to the etherpad to find which issue you were assigned.</li>
+<li>Comment in the issue that you will be working on submitting a
+PR</li>
+<li>Use the instructions and try to file a PR with that change</li>
+<li>Ask the instructor questions as you encounter any issues or
+unexpected behavior.</li>
 </ul>
 </div>
 </div>
 </div>
+<p>The instructor will review and merge your PRs after the skill-up.
+They may need to do some edits if your changes “conflict” with someone
+else changes. This most often happens when two people make edits to the
+same file, we have to tell GitHub which changes are the ones we want to
+keep.</p>
+</section><section id="questions"><h2 class="section-heading">Questions<a class="anchor" aria-label="anchor" href="#questions"></a>
+</h2>
+<hr class="half-width">
+<p>I highly recommend you at least file an issue anytime you find
+something that needs to be fixed in a lesson. If possible, you are
+encouraged to make a Pull Request too.</p>
+<p><strong>What are your questions about using GitHub to contibute to
+the Carpentries lessons?</strong></p>
+<p>For follow-up questions, you can join the #first-time-contributors
+channel on slack or email <a href="../mailto:team@carpentries.org">team@carpentries.org</a>.</p>
+<div id="accordionInstructor3" class="accordion instructor-note accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor3" aria-expanded="false" aria-controls="collapseInstructor3">
+  <h3 class="accordion-header" id="headingInstructor3">
+  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>
+  Instructor Note
+  </h3>
+</button>
+<div id="collapseInstructor3" class="accordion-collapse collapse" aria-labelledby="headingInstructor3" data-bs-parent="#accordionInstructor3">
+<div class="accordion-body">
+<p>Recommend sharing your contact info as well if you are willing to
+help them with future PRs or questions about using the lessons.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- 
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use. 
+ -->
+</section></section><section id="aio-03-homework"><p>Content from <a href="03-homework.html">Using Markdown</a></p>
+<hr>
+<p> Last updated on 2023-09-11 | 
+        
+        <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/03-homework.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 12 minutes </p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right"> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<div class="overview card">
+<h2 class="card-header">Overview</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Questions</h3>
+<ul>
+<li>How can I practice what I learned in this skill-up?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Objectives</h3>
+<ul>
+<li>Practice using the skills learned in this skill-up</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section id="optional-homework"><h2 class="section-heading">Optional: Homework<a class="anchor" aria-label="anchor" href="#optional-homework"></a>
+</h2>
+<hr class="half-width">
+<p>You can also practice your GitHub skills using the Carpentries
+lessons! There is a <a href="https://carpentries.org/help-wanted-issues/" class="external-link">Help Wanted page</a>
+that lists issues that are looking for someone to implement a fix. I
+recommend looking for issues with the label “good first issue” as these
+are identified as issues that may be easier to solve.</p>
+<p>Remember for follow-up questions or help, you can join the
+#first-time-contributors channel on slack or email <a href="../mailto:team@carpentries.org">team@carpentries.org</a>.</p>
 <!-- 
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use. 
