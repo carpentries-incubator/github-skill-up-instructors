@@ -128,6 +128,8 @@ The title is probably okay but one thing we might want to do is *link* our PR wi
 We can type "#4" and it will link it to the #4 issue, and it nicely shows us the title of that issues so we can confirm.
 Since we know this PR should solve this issue we can add a keyword that will automatically close
 the linked issue when our changes are accepted by adding "Fixes" in front of the #4.
+Be sure the option to "Allow edits by maintainers" is checked, this will make it easier fo the maintainers to help you
+with any fixes your PR needs.
 Then we will click the "Create pull request" button.
 
 Let's take a look at the PR we just submitted.
@@ -217,8 +219,26 @@ Now you can practice making a Pull Request yourself.
 
 :::::::::::::::::::::::::::::::::::::::::::::::
 
+The instructor will review and merge your PRs after the skill-up.
+They may need to do some edits if your changes "conflict" with someone else changes.
+This most often happens when two people make edits to the same file, we have to tell GitHub
+which changes are the ones we want to keep.
 
+## Questions
 
+I highly recommend you at least file an issue anytime you find something that needs to be fixed 
+in a lesson.
+If possible, you are encouraged to make a Pull Request too.
+
+What are your questions about using GitHub to contibute to the Carpentries lessons?
+
+For follow-up questions, you can join the #first-time-contributors channel on slack or email [team@carpentries.org](mailto:team@carpentries.org).
+
+:::::: instructor
+
+Recommend sharing your contact info as well if you are willing to help them with future PRs or questions about using the lessons.
+
+:::::::::::::::::
 
 
 [workbench]: https://carpentries.github.io/sandpaper-docs
