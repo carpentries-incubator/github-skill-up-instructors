@@ -230,7 +230,7 @@ I highly recommend you at least file an issue anytime you find something that ne
 in a lesson.
 If possible, you are encouraged to make a Pull Request too.
 
-What are your questions about using GitHub to contibute to the Carpentries lessons?
+**What are your questions about using GitHub to contibute to the Carpentries lessons?**
 
 For follow-up questions, you can join the #first-time-contributors channel on slack or email [team@carpentries.org](mailto:team@carpentries.org).
 
