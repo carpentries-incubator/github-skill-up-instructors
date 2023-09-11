@@ -1,7 +1,7 @@
 ---
-title: "Using Markdown"
-teaching: 10
-exercises: 2
+title: "Suggesting a Change to a Lesson"
+teaching: 40
+exercises: 25
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions 
