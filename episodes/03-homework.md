@@ -1,7 +1,7 @@
 ---
-title: "Using Markdown"
-teaching: 10
-exercises: 2
+title: "Optional Homework"
+teaching: 0
+exercises: 10
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions 
