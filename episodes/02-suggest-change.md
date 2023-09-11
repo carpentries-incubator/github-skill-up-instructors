@@ -217,14 +217,12 @@ that the PR "fixes #4".
 
 ## Make a PR yourself
 
+Now you can practice making a Pull Request yourself.
 
-
-:::::::::::::::::::::::: solution 
-
-
-
-
-:::::::::::::::::::::::::::::::::
+- Go to the etherpad to find which issue you were assigned.
+- Comment in the issue that you will be working on submitting a PR
+- Use the instructions and try to file a PR with that change
+- Ask the instructor questions as you encounter any issues or unexpected behavior.
 
 :::::::::::::::::::::::::::::::::::::::::::::::
 
