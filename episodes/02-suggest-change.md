@@ -7,7 +7,7 @@ exercises: 25
 :::::::::::::::::::::::::::::::::::::: questions 
 
 - How do I edit a file in a Carpentries lesson?
-- How do I suggest those changes back to the Carpentries?
+- How do I suggest those changes back to The Carpentries?
 - How do I edit the suggested changes after I've submitted them?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
@@ -17,20 +17,20 @@ exercises: 25
 - Edit a file in GitHub and commit
 - Create a Pull Request
 - Edit a Pull Request
-- Navigate the PR review structure
+- Navigate the Pull Request review structure
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 
-This episode will dig further into suggesting changes using the lesson infrasturucture. 
+This episode will dig further into suggesting changes using the lesson infrastructure. 
 
 
-Imagine we are looking at rendered "instructor view" to prepare to teach, we notice we can review all images that are part of the lesson to see how we want to reuse them.
-We then notice that the the 2nd image cinnamon rolls doesn't have any alternative text.
+Imagine we are reviewing a rendered "instructor view" to prepare to teach, and we notice we can review all images that are part of the lesson to determine how we want to reuse them.
+We then notice that the 2nd image, cinnamon rolls, does not have any alternative text.
 Alternative text or alt text, is often used by individuals with vision disabilities to relate the contents of an image.
 
-Let's suggest an update to the lesson so this image has alt text.
-First, we will file an issue to alter maintainers to the problem.
+Let us suggest an update to the lesson so this image has alt text.
+First, we will file an issue to alert Maintainers to the problem.
 
 <!--- TODO: Add call out describing the maintainer role -->
 
@@ -38,21 +38,21 @@ First, we will file an issue to alter maintainers to the problem.
 
 We will first go to the source repository again and open the "Issues" tab.
 We can make a new issue by clicking the "New Issue" button in the upper right side of the window.
-However, best practice is that we search through existing issues to see if anyone has already reported this one.
+However, best practice is that we search through existing issues to determine if anyone has already reported this one.
 I'll search for "alt text" in open issues (the default search options on this page).
-I can see that issue #4 is about alt text, I'll open it to see if it is the same as what I was planning to describe.
+I notice that issue #4 is about alt text. I will open it to determine if it is the same as what I was planning to describe.
 It is, in fact, the same issue!
 
-Instead of reporting it, I could then add more info to the existing issue if I think it is needed.
-This would be enough to help the maintainers get started.
+Instead of reporting it, I could then add more information to the existing issue if I think it is needed.
+This would be enough to help the Maintainers get started.
 However, if I want to suggest the change directly, I can do what is called a "Pull Request".
-A "Pull Request" is where someone makes a copy of the lesson, make changes, and then suggests the official repo "pull"
+A "Pull Request" is where someone makes a copy of the lesson, makes changes, and then suggests the official repo "pull"
 the updated version if they are happy with those changes.
 Making a "pull request", often called a "PR", is a great way to support lesson maintenance and to help get changes integrated faster.
 
 ## Creating a Pull Request
 
-First, before I start to make the changes, I'll let others know I'm going to work on this issue.
+First, before I start to make the changes, I will let others know I will be working on this issue.
 If you are affiliated with the repository, you might be able to click the "assign yourself" button under the 
 Assignee's section on the right side. However, most of us will not have access to the Carpentries Lessons directly.
 Instead, we will type a note in as a comment, "I'll go ahead and make a PR with this change".
@@ -73,7 +73,7 @@ add alt text to the image.
 
 ## Workbench Docs - Alt text
 
-Use the [Workbench Documentation][workbench] to find how to add alternative text to an image.
+Use the [Workbench Documentation][workbench] to find out how to add alternative text to an image.
 Type what we need to add to the image in chat when you've found it.
 
 :::::::::::::::::::::::: solution 
@@ -96,21 +96,21 @@ We need to tell GitHub we want to make edits by clicking the pencil icon in the 
 If you don't have permissions, it will ask if you want to make a fork. <!--- I think but I can't test it as I have write permissions -->
 A fork is your copy of a repository that you have access to and can edit.
 
-In my fork I'll make the change adding `{alt='A bunch of cinnamon rolls in a baking tray in an oven.'}`
+In my fork, I'll make the change adding `{alt='A bunch of cinnamon rolls in a baking tray in an oven.'}`
 after the image link.
 I then want to save my changes, to do so in GitHub I have to create a "commit", which is a save with a short message about what changed.
 I can click the "Commit Changes" button on the upper right side or type Ctrl/Cmd+s, 
 the save keyboard shortcut in most programs.
-This will pop up a box to save, the "Commit message" box auto-populates with a message "Update recipe_instructions.Rmd".
-That message isn't very descriptive so it won't make for a good message in the history.
+This will pop up a "Commit message" box which auto-populates with a message "Update recipe_instructions.Rmd".
+That message is not very descriptive, so it will not make for a good message in the history.
 I'll instead change it to "Added alt text to image of rolls in oven".
 If you need to leave some additional info or a longer message, you can add it to the "Extended description" box.
 
-If you have write access, the most important thing we want to check is that the radio buttons at the bottom is switched
+If you have write access, the most important thing we want to check is that the radio buttons at the bottom are switched
 to the option to "Create a **new branch** for this commit and start a pull request".
 If we leave the default box to "Commit directly to the `main` branch" it won't start us on the process of suggesting this change back to the official Carpentries repository.
 When we click the **new branch** button, it asks us what we want to call the "branch", this is a copy of the repository within our fork.
-We can only have one fork but we can have as many branches as we want.
+We can only have one fork, but we can have as many branches as we want.
 The ability to create many different branches allows us to suggest lots of different changes separately to a lesson.
 I'm going to name my branch with the issue it fixes, #4.
 Then I'll click the "Propose changes" button in the bottom right.
@@ -120,15 +120,15 @@ We've now *saved* our suggested changes in our fork and the next page it pulls u
 suggesting that the official repo "pull" in our changes.
 We can see the comparison between forks and branches at the top of the page and a display of the differences
 between our version and the official version.
-Since we are finished with our suggested changes we will click the "Create pull request" button in the 
+Since we are finished with our suggested changes, we will click the "Create pull request" button in the 
 upper right.
 
 It autofills the title with our commit message but we can edit it or add more info in the "Leave a comment box".
 The title is probably okay but one thing we might want to do is *link* our PR with the issue it solves.
-We can type "#4" and it will link it to the #4 issue, and it nicely shows us the title of that issues so we can confirm.
-Since we know this PR should solve this issue we can add a keyword that will automatically close
+We can type "#4" and it will link it to the #4 issue, and it nicely shows us the title of that issue so we can confirm.
+Since we know this PR should solve this issue, we can add a keyword that will automatically close
 the linked issue when our changes are accepted by adding "Fixes" in front of the #4.
-Be sure the option to "Allow edits by maintainers" is checked, this will make it easier fo the maintainers to help you
+Be sure the option to "Allow edits by maintainers" is checked, this will make it easier for the Maintainers to help you
 with any fixes your PR needs.
 Then we will click the "Create pull request" button.
 
@@ -164,14 +164,14 @@ Alternatively, they could "suggest" the change directly.
 In the "Files changed" tab, they can click on the "+" sign to the right of the line numbers on the line or lines where they want to make a suggestion.
 This pops up the option to make a comment associated specifically with that line.
 The reviewer could also have put their comment from the suggestion in this comment box,
-then if lots of lines were changed it would be easier for me to find.
-To make the change even more directly they can click the icon that has box and a + and a - sign.
+then if lots of lines were changed, it would be easier for me to find.
+To make the change even more directly, they can click the icon that has box and a + and a - sign.
 This button adds in a suggestion block into the comment.
 They can then go and make the change in this block directly.
 
 - Reviewer updates the line to say 'A bunch of **uncooked** cinnamon rolls in a baking tray in an oven.'
 
-The review could put together a bunch of a comments into a review by clicking "Start a review" but since our PR is relatively simple, they will instead click "Add single comment" to submit this issue.
+The review could put together a bunch of comments into a review by clicking "Start a review" but since our PR is relatively simple, they will instead click "Add single comment" to submit this issue.
 
 <!--- TODO: callout to mention that they might have to do a review if that is required for merging because the main branch is protected -->
 
@@ -181,7 +181,7 @@ Here you should swap back to the original presenter screensharing.
 
 ::::::::::::::::::::
 
-Now I can see the single comment that the review added and even better I can click the "commit suggestion" button
+Now I can see the single comment that the reviewer added and even better I can click the "commit suggestion" button
 to directly accept their change into my PR.  I'll also update the commit message to say "Adds more detail to alt text"
 and then click "commit changes".
 
@@ -191,17 +191,17 @@ You may now note that the Commits tab has 2 commits.
 If we were to check the "Files changed" it would also be updated.
 
 You too can put in suggestions and then accept them if you need to make small changes to your PR based on a reviewer's advice.
-This works best for small changes and there is a different way I would suggest using for bigger changes but we won't cover it today.
+This works best for small changes and there is a different way I would suggest using for bigger changes but we will not cover it today.
 
 ## Maintainer Accepts Pull Request
 
-Once the review has been completed, the maintainer (or anyone with more access to the repository) can accept our changes and merge the pull request in.  They do this by clicking the "Merge pull request button".  You won't see this button if you don't have access to the repo but I do so I will go ahead and merge it so we can see what happens.
+Once the review has been completed, the Maintainer (or anyone with more access to the repository) can accept our changes and merge the pull request.  They do this by clicking the "Merge pull request button".  You will not notice this button if you do not have access to the repo but I do so I will go ahead and merge it so we can check out what happens.
 
-We can see the status of the Pull request changed to "Merged", it is also no longer listed in the Pull Requests tab
+We notice the status of the Pull request changed to "Merged", it is also no longer listed in the Pull Requests tab
 at the top of the page.
 
 *What happened with the linked issue?* If we click on the #4 link in the PR it will take us to the issue and 
-we can see that the issue is now "Closed".  This automatically happened when we merged the PR since we wrote
+we notice that the issue is now "Closed".  This automatically happened when we merged the PR since we wrote
 that the PR "fixes #4".
 
 
@@ -215,12 +215,12 @@ Now you can practice making a Pull Request yourself.
 - Go to the etherpad to find which issue you were assigned.
 - Comment in the issue that you will be working on submitting a PR
 - Use the instructions and try to file a PR with that change
-- Ask the instructor questions as you encounter any issues or unexpected behavior.
+- Ask the Instructor questions as you encounter any issues or unexpected behaviour.
 
 :::::::::::::::::::::::::::::::::::::::::::::::
 
-The instructor will review and merge your PRs after the skill-up.
-They may need to do some edits if your changes "conflict" with someone else changes.
+The Instructor will review and merge your PRs after the skill-up.
+They may need to do some edits if your changes "conflict" with someone else's changes.
 This most often happens when two people make edits to the same file, we have to tell GitHub
 which changes are the ones we want to keep.
 
@@ -230,9 +230,9 @@ I highly recommend you at least file an issue anytime you find something that ne
 in a lesson.
 If possible, you are encouraged to make a Pull Request too.
 
-**What are your questions about using GitHub to contibute to the Carpentries lessons?**
+**What are your questions about using GitHub to contribute to The Carpentries lessons?**
 
-For follow-up questions, you can join the #first-time-contributors channel on slack or email [team@carpentries.org](mailto:team@carpentries.org).
+For follow-up questions, you can join the #first-time-contributors channel on Slack or email [team@carpentries.org](mailto:team@carpentries.org).
 
 :::::: instructor
 
